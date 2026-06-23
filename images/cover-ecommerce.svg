@@ -1,0 +1,33 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="E-Commerce project cover">
+  <defs>
+    <linearGradient id="ecBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#04120e"/>
+      <stop offset="1" stop-color="#06231b"/>
+    </linearGradient>
+    <radialGradient id="ecGlow1" cx="0.25" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#10b981" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ecGlow2" cx="0.8" cy="0.85" r="0.6">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ecStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#ecBg)"/>
+  <rect width="800" height="600" fill="url(#ecGlow1)"/>
+  <rect width="800" height="600" fill="url(#ecGlow2)"/>
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 150 H800 M0 300 H800 M0 450 H800 M200 0 V600 M400 0 V600 M600 0 V600"/>
+  </g>
+  <g transform="translate(400 250)" fill="none" stroke="url(#ecStroke)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="-60" cy="120" r="14" fill="url(#ecStroke)" stroke="none"/>
+    <circle cx="60" cy="120" r="14" fill="url(#ecStroke)" stroke="none"/>
+    <path d="M-110 -70 H-78 L-50 90 H78 L104 -10 H-60"/>
+  </g>
+  <text x="400" y="470" text-anchor="middle" font-family="Poppins, Segoe UI, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="1">Ayurda</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Poppins, Segoe UI, sans-serif" font-size="20" font-weight="400" fill="#9bead0" letter-spacing="3">E-COMMERCE PLATFORM</text>
+</svg>

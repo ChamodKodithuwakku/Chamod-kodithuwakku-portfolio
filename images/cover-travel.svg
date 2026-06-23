@@ -1,0 +1,32 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="TravelGo project cover">
+  <defs>
+    <linearGradient id="trBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c0a04"/>
+      <stop offset="1" stop-color="#2a0f12"/>
+    </linearGradient>
+    <radialGradient id="trGlow1" cx="0.3" cy="0.28" r="0.6">
+      <stop offset="0" stop-color="#fbbf24" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="trGlow2" cx="0.8" cy="0.82" r="0.6">
+      <stop offset="0" stop-color="#fb7185" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="trStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fcd34d"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#trBg)"/>
+  <rect width="800" height="600" fill="url(#trGlow1)"/>
+  <rect width="800" height="600" fill="url(#trGlow2)"/>
+  <g stroke="url(#trStroke)" stroke-opacity="0.25" stroke-width="2" fill="none" stroke-dasharray="6 10" stroke-linecap="round">
+    <path d="M120 360 C 300 220, 500 460, 690 250"/>
+  </g>
+  <g transform="translate(400 260)" fill="url(#trStroke)">
+    <path d="M0 -78 C 52 -78 92 -38 92 14 C 92 70 24 128 0 150 C -24 128 -92 70 -92 14 C -92 -38 -52 -78 0 -78 Z"/>
+    <circle cx="0" cy="6" r="34" fill="#2a0f12"/>
+  </g>
+  <text x="400" y="470" text-anchor="middle" font-family="Poppins, Segoe UI, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="1">TravelGo</text>
+  <text x="400" y="510" text-anchor="middle" font-family="Poppins, Segoe UI, sans-serif" font-size="20" font-weight="400" fill="#ffd9b0" letter-spacing="3">ONLINE TOUR GUIDE</text>
+</svg>
