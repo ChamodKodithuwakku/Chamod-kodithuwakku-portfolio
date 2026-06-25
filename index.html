@@ -36,7 +36,7 @@
     <header class="navbar">
       <div class="container nav-inner">
         <a href="#header" class="logo">Chamod<span>.</span></a>
-        <nav>
+        <nav id="primary-nav">
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -44,11 +44,18 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Work</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="nav-mobile-cta">
+              <a href="images/chamod kodithuwakku cv.pdf" download>Resume</a>
+            </li>
           </ul>
         </nav>
         <a href="images/chamod kodithuwakku cv.pdf" download class="btn btn-ghost nav-cta">Resume</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
+    <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
 
     <!-- Hero -->
     <section id="header">

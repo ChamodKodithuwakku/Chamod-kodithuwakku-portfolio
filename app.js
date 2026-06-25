@@ -54,6 +54,30 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ---------- Mobile menu ---------- */
+  const navToggle = document.getElementById('nav-toggle');
+  const navBackdrop = document.getElementById('nav-backdrop');
+  const primaryNav = document.getElementById('primary-nav');
+  if (navToggle && navbar) {
+    function setMenu(open) {
+      navbar.classList.toggle('menu-open', open);
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    navToggle.addEventListener('click', () =>
+      setMenu(!navbar.classList.contains('menu-open'))
+    );
+    if (navBackdrop) navBackdrop.addEventListener('click', () => setMenu(false));
+    if (primaryNav) {
+      primaryNav.querySelectorAll('a').forEach((a) =>
+        a.addEventListener('click', () => setMenu(false))
+      );
+    }
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') setMenu(false);
+    });
+  }
+
   if (reduceMotion) return; // skip heavy motion/3D for reduced-motion users
 
   /* ---------- 3D tilt cards ---------- */
@@ -109,6 +133,7 @@
   const orbs = document.querySelectorAll('.orb');
   if (finePointer) {
     window.addEventListener('mousemove', (e) => {
+      if (window.innerWidth <= 920) return; // no parallax on small screens
       const cx = (e.clientX / window.innerWidth - 0.5) * 2;
       const cy = (e.clientY / window.innerHeight - 0.5) * 2;
       parallaxEls.forEach((el) => {
